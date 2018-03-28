@@ -1,4 +1,4 @@
 commande:
 dig -x 10.51.1.81 | awk '/ANSWER/{getline; print}'
-résultat:
+sortie:
 81.1.51.10.in-addr.arpa. 3600   IN      PTR     ldap-proxy.42.fr.
