@@ -1,0 +1,4 @@
+UPD_LOG="/var/log/update_script.log"
+rm $UPD_LOG
+apt-get update >> $UPD_LOG
+apt-get upgrade >> $UPD_LOG

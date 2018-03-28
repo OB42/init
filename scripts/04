@@ -1,0 +1,7 @@
+md5sum /etc/crontab > cronmd5
+if cmp -s "cronmd5" "old"; then
+	echo "no change"
+else
+	mail -s "crontab changed" root
+fi
+cp cronmd5 old
