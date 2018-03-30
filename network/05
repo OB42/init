@@ -1,1 +1,1 @@
-nslookup -querytype=soa slash16.org | grep 'origin =' | sed 's/origin = //'
+nslookup -querytype=soa slash16.org | grep 'internet address'
